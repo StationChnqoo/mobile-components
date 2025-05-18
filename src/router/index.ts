@@ -23,4 +23,10 @@ const router = createRouter({
   ],
 })
 
+router.beforeEach((to, from, next) => {
+  console.log('➡️ 正在跳转到：', to.fullPath)
+  console.log('📌 路径参数：', to.params)
+  console.log('🔍 查询参数：', to.query)
+  next()
+})
 export default router
