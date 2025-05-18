@@ -7,7 +7,7 @@ export default class BaseService {
     this.token = token
     this.instance = axios.create({
       // baseURL: Config.SERVER,
-      baseURL: '/api',
+      baseURL: 'http://110.42.253.75:7573',
       timeout: 10000,
       headers: {
         token: this.token,

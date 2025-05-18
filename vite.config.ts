@@ -14,12 +14,12 @@ export default defineConfig({
     extensions: ['.ts', '.js', '.mjs'],
   },
   server: {
-    proxy: {
-      '/api': {
-        target: 'http://110.42.253.75:7573',
-        changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api/, ''),
-      },
-    },
+    // proxy: {
+    //   '/api': {
+    //     target: 'http://110.42.253.75:7573',
+    //     changeOrigin: true,
+    //     rewrite: (path) => path.replace(/^\/api/, ''),
+    //   },
+    // },
   },
 })
